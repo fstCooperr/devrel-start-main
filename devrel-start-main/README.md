@@ -7,4 +7,4 @@
 
 # What happens next:
 - Learn DevRel step by step
-Thanks for reading
+- Thanks for reading
