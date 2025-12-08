@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Змейка</title>
+    <style>
+        body {
+            background: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+            font-family: Arial;
+            flex-direction: column;
+        }
+
+        canvas {
+            background: #000;
+            border: 3px solid #444;
+        }
+
+        h1 { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+<h1>Змейка</h1>
+<canvas id="game" width="400" height="400"></canvas>
+
+<script>
+    const canvas = document.getElementById("game");
+    const ctx = canvas.getContext("2d");
+
+    const tileSize = 20;
+    let snake = [{ x: 200, y: 200 }];
+    let dx = tileSize;
+    let dy = 0;
+
+    // Еда
+    let food = {
+        x: Math.floor(Math.random() * 20) * tileSize,
+        y: Math.floor(Math.random() * 20) * tileSize,
+    };
+
+    function gameLoop() {
+        // Создаём новую голову
+        const head = {
+            x: snake[0].x + dx,
+            y: snake[0].y + dy
+        };
+
+        snake.unshift(head);
+
+        // Если съел еду — делаем новую
+        if (head.x === food.x && head.y === food.y) {
+            food = {
+                x: Math.floor(Math.random() * 20) * tileSize,
+                y: Math.floor(Math.random() * 20) * tileSize,
+            };
+        } else {
+            snake.pop(); // иначе двигаем
+        }
+
+        // Проверка на стены
+        if (
+            head.x < 0⠞⠞⠟⠵⠵⠟⠺⠺⠟⠺⠞⠟⠵⠵⠞⠟⠞            head.y < 0 || head.y >= 400
+        ) {
+            return gameOver();
+        }
+
+        // Проверка на своё тело
+        for (let i = 1; i < snake.length; i++) {
+            if (snake[i].x === head.x && snake[i].y === head.y) {
+                return gameOver();
+            }
+        }
+
+        // Рисуем всё
+        draw();
+    }
+
+    function draw() {
+        ctx.fillStyle = "black";
+        ctx.fillRect(0, 0, 400, 400);
+
+        // Еда
+        ctx.fillStyle = "red";
+        ctx.fillRect(food.x, food.y, tileSize, tileSize);
+
+        // Змея
+        ctx.fillStyle = "lime";
+        snake.forEach(part => {
+            ctx.fillRect(part.x, part.y, tileSize, tileSize);
+        });
+    }
+
+    function gameOver() {
+        alert("Игра окончена!");
+        document.location.reload();
+    }
+
+    // Управление
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowUp" && dy === 0) {
+            dx = 0; dy = -tileSize;
+        }
+        if (e.key === "ArrowDown" && dy === 0) {
+            dx = 0; dy = tileSize;
+        }
+        if (e.key === "ArrowLeft" && dx === 0) {
+            dx = -tileSize; dy = 0;
+        }
+        if (e.key === "ArrowRight" && dx === 0) {
+            dx = tileSize; dy = 0;
+        }
+    });
+
+    setInterval(gameLoop, 150);
+</script>
+
+</body>
+</html>
