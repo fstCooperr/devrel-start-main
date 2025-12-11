@@ -8,4 +8,4 @@ Creating my first project became an important moment for me. That’s when I fel
 **Everything you do makes you better!**
 And this small path is only the beginning of a much bigger journey ahead.
 
-*by fstCooperr*
+*By fstCooperr*
