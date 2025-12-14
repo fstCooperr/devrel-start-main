@@ -21,3 +21,17 @@ This project contains a simple API example.
 
 API used:
 https://jsonplaceholder.typicode.com/users
+
+## Quickstart
+
+### Prerequisites
+- Node.js (LTS)
+
+### Steps
+
+1. Clone the repository
+2. Install Node.js
+3. Run the Quickstart example:
+
+```bash
+node quickstart.js
