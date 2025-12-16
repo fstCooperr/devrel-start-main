@@ -22,3 +22,42 @@ DevRel operates at the intersection of product and community and focuses on thre
 
 ### Why is this important?
 DevRel accelerates product adoption, lowers the barrier to entry, and helps build a community of developers who will recommend and further develop the product.
+
+
+# My first DevRel project
+
+## What did I do:
+- Create Github account
+- Install VS Code
+- Install Node.js
+
+# What happens next:
+- Learn DevRel step by step
+# Thanks for reading!
+# Have a nice day!
+
+## API Example
+
+This project contains a simple API example.
+
+### How to run:
+1. Open api.html using Live Server
+2. Click the "Load Users" button
+3. Open browser console to see the result
+
+API used:
+https://jsonplaceholder.typicode.com/users
+
+## Quickstart
+
+### Prerequisites
+- Node.js (LTS)
+
+### Steps
+
+1. Clone the repository
+2. Install Node.js
+3. Run the Quickstart example:
+
+```bash
+node quickstart.js
