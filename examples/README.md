@@ -14,7 +14,7 @@ Steps to run:
 
 You should see a JSON response from the API.
 
-## Demo Video
+## Demo Video 
 
 🎥 How to run the API example:
 https://www.youtube.com/watch?v=FHGQwv7zJdQ
