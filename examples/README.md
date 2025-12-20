@@ -12,4 +12,9 @@ Steps to run:
    or simply open the file in a browser
 4. Click the "Load users" button
 
-You should see a JSON response from the API.
+You should see a JSON response from the API. 
+
+## Demo Video 
+
+🎥 How to run the API example:
+https://www.youtube.com/watch?v=FHGQwv7zJdQ
