@@ -13,3 +13,8 @@ Steps to run:
 4. Click the "Load users" button
 
 You should see a JSON response from the API.
+
+## Demo Video
+
+🎥 How to run the API example:
+https://www.youtube.com/watch?v=FHGQwv7zJdQ
