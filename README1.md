@@ -37,7 +37,3 @@ Before committing:
 - ✅ The README reads like a story
 - ✅ Clear for a beginner
 ```
-## Demo
-Simple API demo using fetch:
-```js
-fetch("https://reqres.in/api/users?page=2")
