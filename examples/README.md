@@ -21,4 +21,4 @@ https://www.youtube.com/watch?v=FHGQwv7zJdQ
 
 ![Open code](images/vscode-project.png)
 ![Open with live server](images/live-server.png)
-![Browser result](images/browser-results.png)
+![Browser result](images/browser-result.png)
