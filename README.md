@@ -34,6 +34,8 @@ Short description
 ## Video walkthrough
 ## Mini-talk
 
+______
+
 ## Workshop
 
 A step-by-step workshop for beginners is available.
